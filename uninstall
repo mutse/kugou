@@ -1,0 +1,8 @@
+#!/bin/bash
+ 
+log=installed_files
+if [ -f $log ] ; then
+    cat $log | xargs rm -rf
+    rm -f $log
+    echo "The software has been uninstalled"
+fi

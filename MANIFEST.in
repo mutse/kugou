@@ -1,0 +1,6 @@
+include AUTHORS COPYING README
+include MANIFEST.in
+include ChangeLog
+include kugou
+include kugou.desktop
+include kugou.png

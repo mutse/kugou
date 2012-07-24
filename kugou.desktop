@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Kugou Music
+Name[zh_CN]=酷狗在线音乐
+Comment=Play kugou web music 
+Comment[zh_CN]=播放酷狗网络音乐
+GenericName=Music Player
+Exec=kugou %F
+Icon=kugou
+Type=Application
+Categories=AudioVideo;Player;GTK;
