@@ -1,4 +1,5 @@
 ===== What is Kugou Music? ====
+
 Kugou Music a app for playing music online.
 
 ===== Howto Install It? =====
@@ -6,6 +7,7 @@ Kugou Music a app for playing music online.
 sudo apt-get install python-webkit
 sudo python setup.py install --prefix=/usr/local
 
+==== Howto Remove It? =====
 
-
+sudo ./uninstall
 
