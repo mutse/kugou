@@ -6,3 +6,11 @@ if [ -f $log ] ; then
     rm -f $log
     echo "The software has been uninstalled"
 fi
+
+if [ -f "/usr/local/share/applications/kugou.desktop" ] ; then
+	rm -rf /usr/local/share/applications/kugou.desktop
+fi
+
+if [ -f "/usr/local/share/icons/kugou.png" ] ; then
+	rm -f /usr/local/share/icons/kugou.png
+fi
