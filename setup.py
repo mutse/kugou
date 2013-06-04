@@ -17,11 +17,11 @@ setup(name = 'Kugou Music',
       packages = find_packages(),
       scripts = ['kugou/kugou'],
       include_package_data = True,
-      package_data = {'': ['*.png', '*.desktop']},
       data_files=[
-          ('/usr/local/share/icons/', glob.glob('*.png')),
-          ('/usr/local/share/applications/', glob.glob('*.desktop')),
+          ('/usr/local/share/icons/', glob.glob('data/kugou.png')),
+          ('/usr/local/share/applications/', glob.glob('data/kugou.desktop')),
           ],
       license='GNU GPL',
       platforms='linux',
-      )
+)
+
