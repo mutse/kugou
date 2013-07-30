@@ -29,9 +29,12 @@ class WebKugou(gtk.Window):
         vbox.pack_start(view)
         self.add(vbox)
 
-        self.set_default_size(800, 600)
+        self.set_default_size(700, 518)
         self.set_title('Kugou Music')
         self.set_position(gtk.WIN_POS_CENTER)
+        self.tray = gtk.StatusIcon()
+        self.tray.set_from_file("/usr/local/share/icons/kugou.png")
+        self.tray.connect('popup-menu', self.on_right_click)
 
         try:
             self.set_icon_from_file("/usr/local/share/icons/kugou.png")
@@ -43,6 +46,31 @@ class WebKugou(gtk.Window):
         self.show_all()
 
         view.open("http://web.kugou.com")
+
+    def on_right_click(self, icon, event_button, event_time):
+        menu = gtk.Menu()
+
+        about = gtk.MenuItem('About')
+        about.show()
+        menu.append(about)
+        about.connect('activate', self.show_about_dialog)
+
+        quit = gtk.MenuItem('Quit')
+        quit.show()
+        menu.append(quit)
+        quit.connect('activate', gtk.main_quit)
+
+        menu.popup(None, None, gtk.status_icon_position_menu, event_button, event_time, self.tray)
+
+    def show_about_dialog(self, widget):
+        about_dialog = gtk.AboutDialog()
+        about_dialog.set_destroy_with_parent(True)
+        about_dialog.set_name('Kugou Music')
+        about_dialog.set_version('1.0.1')
+        about_dialog.set_comments((u'This is a online player of Kugou Music'))
+        about_dialog.set_authors([u'Mutse Young <yyhoo2.young@gmail.com>'])
+        about_dialog.run()
+        about_dialog.destroy()
 
 if __name__ == "__main__":
     WebKugou()

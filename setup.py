@@ -10,7 +10,7 @@ except ImportError:
 
 setup(name = 'Kugou Music',
       description = 'Kugou Music online Player',
-      version = '0.1.0',
+      version = '1.0.1',
       maintainer = 'Mutse Young',
       maintainer_email = 'yyhoo2.young@gmail.com',
       url = 'http://mutse.blogbus.com/',
