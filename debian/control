@@ -1,0 +1,15 @@
+Source: kugou
+Section: sound
+Priority: extra
+Maintainer: yyhoo <yyhoo2.young@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), python
+Standards-Version: 3.9.3
+Homepage: http://mutse.tk
+#Vcs-Git: git://git.debian.org/collab-maint/kugou.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/kugou.git;a=summary
+
+Package: kugou
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libgtk2.0-0, python-gtk2,python-webkit
+Description: Kugou online music player
+  Kugou desktop player app of Kugou online music.

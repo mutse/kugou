@@ -1,0 +1,5 @@
+debian/bin/kugou /usr/bin
+data/kugou.png /usr/share/icons/
+data/kugou.desktop /usr/share/applications/
+kugou/kugou /usr/share/kugou
+
