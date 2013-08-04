@@ -1,0 +1,12 @@
+Source: kugou
+Maintainer: Mutse Young <yyhoo2.young@gmail.com>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7.4.3)
+Standards-Version: 3.9.1
+
+Package: kugou
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-webkit, python-gtk2
+Description: Kugou Music online Player
+
