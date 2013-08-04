@@ -1,5 +1,5 @@
 include AUTHORS COPYING README
 include MANIFEST.in
 include ChangeLog
-recursive-include data *.png *.desktop
+recursive-include data *.png *.in *.desktop
 recursive-include kugou/ *

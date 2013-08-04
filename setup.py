@@ -8,18 +8,18 @@ except ImportError:
     print 'Would you please install package "python-webkit" first?'
     sys.exit()
 
-setup(name = 'Kugou Music',
+setup(name = 'kugou',
       description = 'Kugou Music online Player',
       version = '1.0.1',
       maintainer = 'Mutse Young',
       maintainer_email = 'yyhoo2.young@gmail.com',
-      url = 'http://mutse.blogbus.com/',
+      url = 'https://github.com/mutse/kugou',
       packages = find_packages(),
       scripts = ['kugou/kugou'],
       include_package_data = True,
       data_files=[
-          ('/usr/local/share/icons/', glob.glob('data/kugou.png')),
-          ('/usr/local/share/applications/', glob.glob('data/kugou.desktop')),
+          ('share/icons/', glob.glob('data/kugou.png')),
+          ('share/applications/', glob.glob('data/kugou.desktop')),
           ],
       license='GNU GPL',
       platforms='linux',

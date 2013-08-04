@@ -33,11 +33,11 @@ class WebKugou(gtk.Window):
         self.set_title('Kugou Music')
         self.set_position(gtk.WIN_POS_CENTER)
         self.tray = gtk.StatusIcon()
-        self.tray.set_from_file("/usr/local/share/icons/kugou.png")
+        self.tray.set_from_file("/usr/share/icons/kugou.png")
         self.tray.connect('popup-menu', self.on_right_click)
 
         try:
-            self.set_icon_from_file("/usr/local/share/icons/kugou.png")
+            self.set_icon_from_file("/usr/share/icons/kugou.png")
         except Exception, e:
             print e.message
             sys.exit(1)

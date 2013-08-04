@@ -1,7 +1,11 @@
-2013-07-30	Kugou Music 1.0.1
-	* add a system tray
+2013-07-30 Mutse Young <yyhoo2.young@gmail.com>
 
-2013-06-04	Kugou Music 1.0.0
-	* removed kugou.png and kugou.desktop to data dir
+	* Add a system tray
 
-2012-07-24	Kugou Music 0.1.0
+2013-06-04 Mutse Young <yyhoo2.young@gmail.com>
+
+	* Remove kugou.png and kugou.desktop to data dir
+
+2012-07-24 Mutse Young <yyhoo2.young@gmail.com>
+
+	* First release
